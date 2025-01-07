@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girman UI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.jpg" alt="Girman Logo">
+      <span class="company-name">Girman</span>
+    </div>
+    <div class="links">
+      <a href="#" class="active">SEARCH</a>
+      <a href="http://girmantech.com" target="_blank">WEBSITE</a>
+      <a href="https://www.linkedin.com/company/girmantech" target="_blank">LINKEDIN</a>
+      <a href="mailto:contact@girmantech.com">CONTACT</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="logo-large">
+      <img src="logo.jpg" alt="Girman Logo Large">
+      Girman
+    </div>
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Search">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="resultsContainer" class="results-container"></div>
+  </div>
+
+  <!-- Modal for User Details -->
+  <div id="userDetailsModal" class="modal">
+    <div class="modal-content">
+      <h2>User Details</h2>
+      <img id="userImage" src="https://via.placeholder.com/150" alt="User Image" style="border-radius:50%; margin-bottom:10px;">
+      <p><strong>Name:</strong> <span id="userName">N/A</span></p>
+      <p><strong>Location:</strong> <span id="userLocation">N/A</span></p>
+      <p><strong>Contact:</strong> <span id="userContact">N/A</span></p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
